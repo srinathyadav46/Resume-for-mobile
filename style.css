@@ -1,8 +1,10 @@
+/* ===== DESKTOP / LAPTOP THEME ===== */
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #4b6cb7, #182848);
-    color: white;
+    color: #ffffff;
 }
 
 header {
@@ -18,16 +20,8 @@ header img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 4px solid white;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 38px;
-}
-
-header h3 {
-    font-weight: 400;
+    border: 4px solid #ffffff;
+    object-fit: cover;
 }
 
 .buttons {
@@ -44,12 +38,6 @@ button {
     color: white;
     font-size: 15px;
     cursor: pointer;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
 }
 
 .section {
@@ -61,7 +49,7 @@ button:hover {
     border-radius: 18px;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: 0.4s ease;
 }
 
 .section.show {
@@ -69,15 +57,11 @@ button:hover {
     transform: translateY(0);
 }
 
-ul {
-    padding-left: 20px;
-}
-
 .edu-title {
-    cursor: pointer;
     padding: 12px;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
+    cursor: pointer;
     margin-top: 12px;
 }
 
@@ -89,28 +73,46 @@ ul {
 footer {
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* 📱 MOBILE RESPONSIVE */
+/* ===== MOBILE THEME (DIFFERENT COLORS) ===== */
+
 @media (max-width: 768px) {
+
+    body {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #e6f7f8;
+    }
 
     header {
         flex-direction: column;
-        text-align: center;
+        background-color: #102a43;
     }
 
     header img {
-        width: 100px;
-        height: 100px;
+        width: 105px;
+        height: 105px;
+        border: 3px solid #00e5ff;
     }
 
     button {
         width: 90%;
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        color: #ffffff;
     }
 
     .section {
         width: 95%;
+        background-color: rgba(0, 230, 255, 0.15);
+    }
+
+    .edu-title {
+        background-color: rgba(0, 230, 255, 0.25);
+    }
+
+    footer {
+        background-color: #102a43;
+        color: #b2f5ea;
     }
 }
