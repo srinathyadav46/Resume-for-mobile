@@ -165,3 +165,18 @@ footer {
     padding: 6px 8px;
     border-radius: 50%;
 }
+.menu-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 18px;
+    padding: 6px 8px;
+    border-radius: 50%;
+}
+
+/* OPTIONAL HOVER EFFECT */
+.edu-title:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
