@@ -254,6 +254,15 @@ function toggleSkill(id) {
 function exitSite() {
     alert("Thank you for visiting my resume website!");
 }
+function rate(stars) {
+    let allStars = document.querySelectorAll(".stars span");
+    allStars.forEach((star, index) => {
+        star.classList.toggle("active", index < stars);
+    });
+
+    document.getElementById("rating-text").innerText =
+        "Thank you for rating " + stars + " star(s)!";
+}
 </script>
 
 <footer>Created By :- Srinath Yadav </footer>
