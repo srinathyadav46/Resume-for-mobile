@@ -77,7 +77,6 @@ body {
 
 /* HEADER */
 header {
-    position: fixed;
     display: flex;
     align-items: center;
     gap: 16px;
