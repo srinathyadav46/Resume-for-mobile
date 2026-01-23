@@ -175,16 +175,20 @@ footer {
     padding: 6px 8px;
     border-radius: 50%;
 }
-
-/* OPTIONAL HOVER EFFECT */
-.edu-title:hover {
-    background: rgba(255, 255, 255, 0.3);
+/* EXIT BUTTON */
+.exit-btn {
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    font-size: 22px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1100;
 }
-<script>
-function toggleSkill(id) {
-    let skills = document.querySelectorAll("#skills .edu-details");
-    skills.forEach(skill => skill.style.display = "none");
 
-    document.getElementById(id).style.display = "block";
+.exit-btn:hover {
+    background: rgba(255, 0, 0, 0.7);
 }
-</script>
