@@ -79,13 +79,41 @@
 <div id="skills" class="section">
     <div class="card">
         <h2>Skills</h2>
-        <ul>
-            <li>HTML5 & CSS3</li>
-            <li>Responsive Web Design</li>
-            <li>Basic JavaScript</li>
-            <li>Python Programming</li>
-            <li>Git & GitHub</li>
-        </ul>
+
+        <p class="edu-title" onclick="toggleSkill('web')">Web Development</p>
+        <div id="web" class="edu-details">
+            <ul>
+                <li>HTML5 – Semantic structure</li>
+                <li>CSS3 – Responsive layouts</li>
+                <li>Basic JavaScript – DOM manipulation</li>
+            </ul>
+        </div>
+
+        <p class="edu-title" onclick="toggleSkill('programming')">Programming</p>
+        <div id="programming" class="edu-details">
+            <ul>
+                <li>Python – Basics and problem solving</li>
+                <li>Basic understanding of algorithms</li>
+            </ul>
+        </div>
+
+        <p class="edu-title" onclick="toggleSkill('tools')">Tools & Platforms</p>
+        <div id="tools" class="edu-details">
+            <ul>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Linux basics</li>
+            </ul>
+        </div>
+
+        <p class="edu-title" onclick="toggleSkill('soft')">Soft Skills</p>
+        <div id="soft" class="edu-details">
+            <ul>
+                <li>Problem solving</li>
+                <li>Self-learning</li>
+                <li>Time management</li>
+            </ul>
+        </div>
     </div>
 </div>
 
