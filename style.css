@@ -14,7 +14,7 @@ body {
 
 /* MENU BUTTON */
 .menu-btn {
-    position: fixed;
+    position: flex;
     top: 20px;
     right: 20px;
     font-size: 26px;
