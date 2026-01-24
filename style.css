@@ -225,3 +225,11 @@ footer {
         color: #b2f5ea;
     }
 }
+@media print {
+    .menu-btn,
+    .side-menu,
+    .exit-btn,
+    footer {
+        display: none;
+    }
+}
